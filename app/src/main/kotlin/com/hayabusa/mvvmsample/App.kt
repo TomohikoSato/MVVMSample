@@ -1,19 +1,15 @@
 package com.hayabusa.mvvmsample
 
 import com.hayabusa.mvvmsample.di.AppModule
-import dagger.android.support.DaggerApplication
+import com.hayabusa.mvvmsample.di.DaggerAppComponent
+import dagger.android.DaggerApplication
 
 class App : DaggerApplication() {
 
     override fun applicationInjector() =
-            DaggerAppComponent.builder()
-                    .application(this)
+            DaggerAppComponent
+                    .builder()
                     .appModule(AppModule(this))
                     .build()
-
-
-    override fun onCreate() {
-        super.onCreate()
-    }
 
 }
