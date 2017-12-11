@@ -1,4 +1,4 @@
-package com.hayabusa.mvvmsample
+package com.hayabusa.mvvmsample.login
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -23,6 +23,7 @@ import android.widget.TextView
 
 import java.util.ArrayList
 import android.Manifest.permission.READ_CONTACTS
+import com.hayabusa.mvvmsample.R
 
 import kotlinx.android.synthetic.main.activity_login.*
 
